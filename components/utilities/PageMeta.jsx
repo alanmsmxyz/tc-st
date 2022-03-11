@@ -1,10 +1,9 @@
 import Head from 'next/head'
 
-export default function PageMeta ({ props }) {
+export default function PageMeta ({ title }) {
   return (
     <Head>
-      <title>{props.title}</title>
-      <meta name='description' content={props.description} />
+      <title>{title}</title>
     </Head>
   )
 }
